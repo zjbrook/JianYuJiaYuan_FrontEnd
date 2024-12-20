@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "importHelpers": true, // 不让同样的辅助函数重复的出现在多个文件中
+    "allowSyntheticDefaultImports": true, // 允许对不包含默认导出的模块使用默认导入。
+    "baseUrl": ".", // 非相对模块的导入可以相对于baseUrl或通过下文会讲到的路径映射来进行解析
+    "lib": ["esnext", "dom"],
+    "paths": {
+      "@/*": ["src/*"],
+      "@/stores*": ["./src/stores*"],
+      "@/components*": ["./src/components*"],
+      "@/modules*": ["./src/modules*"],
+      "@/utils*": ["./src/utils*"]
+    },
+    "types": ["element-plus/global"]
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "src/*",
+    "src/**/*.vue",
+    "src/**/*.tsx",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.js"
+  ]
+}

@@ -1,0 +1,9 @@
+export const loginPath = "/login";
+export const homeOverviewPath = "/HomeOverview";
+export const productProjectPath = "/ProductProject";
+export const featureDevelopment = "/FeatureDevelopment";
+export const problemTrackingPath = "/ProblemTracking";
+export const teamMembersPath = "/TeamMembers";
+export const lifeForumPath = "/LifeForum";
+export const personalInformationPath = "/PersonalInformation";
+export const dailyTodoListPath = "/DailyTodoList";
